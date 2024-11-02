@@ -10,35 +10,60 @@
 <body class=" bg-slate-400">
     <nav>
         <ul class="bg-slate-900 py-4 text-white flex flex-row [&>*]:flex [&>*]:rounded ">
-            <li class="basis-8 p-2 text-2xl ">
-                <a href="#" class=""> Portfolio</a>
+            <li class="basis-8 p-2 px-2 text-2xl ml-2">
+                <a href="#" class=""> Curls </a>
             </li>
-            <li class="basis-4 ml-3 p-4 text-center hover:bg-gray-700 ">
+            <li class="basis-4 ml-6 p-4 text-center hover:bg-gray-700 ">
                 <a href="#"> Home</a>
             </li>
             <li class="basis-4 p-4 hover:bg-gray-700 ">
-                <a href="#"> Projects</a>
+                <a href="#"> Services</a>
             </li>
             <li class="basis-4 p-4 hover:bg-gray-700">
                 <a href="#"> Contact </a>
             </li>
             <li class="basis-4 p-4 hover:bg-gray-700 ">
-                <a href="#"> Resume </a>
+                <a href="#"> Products </a>
+            </li>
+            <li>
+                <button class="bg-white text-black ml-2 px-2 transition ease-in-out delay-150 hover:scale-110 rounded"> Book Now</button>
             </li>
         </ul>
     </nav>
     
-    <div class="grid grid-cols-4">
-        <div class=" col-span-3 p-6 m-5 mt-4 bg-blue-800 text-white w-1/2 text-2xl rounded">
+    <div class="grid grid-cols-7">
+        <div class=" col-span-4 p-6 mt-5 ml-5 bg-blue-800 text-white text-2xl rounded">
             <h1 class=" text-5xl text-white font-bold px-3 py-5 ">
-                Hello World!
+                Welcome the store!
             </h1>
-            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ex iure totam dignissimos tenetur beatae animi doloribus, quasi ut fugit sed dicta alias architecto earum obcaecati sint harum unde cum!</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ex iure totam dignissimos tenetur beatae animi doloribus, quasi ut fugit sed dicta alias architecto earum obcaecati sint harum unde cum!</p>
         </div>
-        <div class="col-span-1">
-            <img src="hairstyle.webp" alt="">
+        <div class="col-span-3">
+            <img class="mt-4 ml-4 w-100 h-41 rounded" src="hairstyle.webp" alt="" >
         </div>
     </div>
+
+    <div class="mt-5 carousel flex flex-row justify-center">
+        <button class="text-8xl hover:text-blue-600" class="left-slide" onclick="left_slide_event()"> < </button>
+        <img class="img-placeholder" src="hotel.jpg" alt="" width="500px" height="200px" 
+        class="border-4 border-blue-950 mt-3 shadow-sm">
+        <button class="text-8xl hover:text-blue-600" class="right-slide" onclick="right_slide_event()"> > </button>
+    </div>
+
+    <script>
+        // let left_slide = document.querySelector(".left-slide");
+        // let right_slid = document.querySelector(".right-slide");
+        let img = document.querySelector(".img-placeholder");
+        
+        function left_slide_event(){
+            img.setAttribute('src','product_img/2.jpg');
+        }
+        function right_slide_event(){
+            img.setAttribute('src','product_img/3.jpg');
+        }
+        
+
+    </script>
     
 </body>
 </html>
