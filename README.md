@@ -22,7 +22,7 @@
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/username/curls-website.git
+   git clone https://github.com/chriswilder3/Tailwind-Hair-Style-Site.git
    ```
 2. Install Tailwind CSS if not included : Instructions at - https://tailwindcss.com
 3. Build and Run: Open index.html in your browser to view the website.
